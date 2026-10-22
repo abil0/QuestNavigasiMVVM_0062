@@ -2,5 +2,7 @@
     <string name="app_name">Pertemuan6</string>
     <string name="Submit">Submit</string>
     <string name="Back">Back</string>
-    <string name="Nama_Lengkap">Nama Lengkap</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="alamat">Alamat</string>
 </resources>
