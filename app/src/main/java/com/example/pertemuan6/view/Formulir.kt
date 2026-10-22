@@ -1,6 +1,8 @@
 package com.example.pertemuan6.view
 
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -56,3 +58,10 @@ fun FormIsian(
                     }
                 }
             }
+
+            HorizontalDivider(modifier = Modifier
+                .padding(20.dp)
+                .width(250.dp),
+                thickness = 1.dp,
+                color = Color.Red
+            )
