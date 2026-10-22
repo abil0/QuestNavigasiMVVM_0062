@@ -9,14 +9,22 @@ import androidx.compose.ui.res.stringResource
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormIsian(
-    jenisK:List<String> = listOf("Laki-Laki","Perempuan"),
+    jenisK: List<String> = listOf("Laki-laki", "Perempuan"),
     OnSubmitBtnClick: () -> Unit
-){
-    Scaffold(modifier = Modifier,
-        topBar ={
+) {
+    Scaffold(
+        modifier = Modifier,
+        topBar = {
             TopAppBar(
-                title = {Text(stringResource(id = "Form Isian"),color = Color.White)},
+                title = { Text(stringResource(id = R.string.form_isian), color = Color.White) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
-                    containerColor = ColorResource(id = R.color.teal_700))
-            )}
-}
+                    containerColor = colorResource(id = R.color.teal_700)
+                )
+            )
+        }
+    ) { isiRuang ->
+        Column(
+            modifier = Modifier.padding(isiRuang),
+            verticalArrangement = Arrangement.Top,
+            horizontalAlignment = Alignment.CenterHorizontally
+        )
