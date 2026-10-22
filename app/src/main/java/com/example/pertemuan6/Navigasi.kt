@@ -35,7 +35,7 @@ fun DataApp(
                 )
             }
             composable(route = Navigasi.Detail.name){
-                TampilData(
+                TampilData (
                     onBackBtnClick = {cancelAndBackToFormulirSaya(navController)}
                 )
             }
